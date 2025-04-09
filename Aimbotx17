@@ -202,13 +202,4 @@ discordBtn.MouseButton1Click:Connect(function()
 	})
 end)
 
-{
-    "keyRequired": "newKeyHere"
-}
 
-local HttpService = game:GetService("HttpService")
-local keyUrl = "https://raw.githubusercontent.com/yourusername/yourrepo/main/key.json" -- URL ของไฟล์ JSON
-local keyData = HttpService:GetAsync(keyUrl) -- ดึงข้อมูลจาก URL
-local keyTable = HttpService:JSONDecode(keyData) -- แปลงข้อมูล JSON เป็นตาราง
-
-local keyRequired = keyTable.keyRequired -- ดึงค่า Key ที่ต้องการ
